@@ -245,9 +245,12 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
-}
+function get20s(arr) {
+//   for(let i = 0; i < arr.length; i++){
+//     const newYear = arr.years.split(" - ");
+//     console.log(newYear);
+//   }
+ }
 
 
 
@@ -260,9 +263,12 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, num) {
+  arr.splice(num, num);
+  return arr.length;
 }
+// console.log(removeArtist(artists, 1));
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -281,8 +287,16 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(arr) {
+  arr.push({ 
+    id: 20,
+    name: 'John Sime', 
+    years: '1996 - current day',
+    genre: 'Web Design', 
+    nationality: 'Dominican-American',
+    bio: "Lorem Khaled Ipsum is a major key to success. Stay focused. It’s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. In life you have to take the trash out, if you have trash in your life, take it out, throw it away, get rid of it, major key."
+  })
+  return arr;
 }
 
 
