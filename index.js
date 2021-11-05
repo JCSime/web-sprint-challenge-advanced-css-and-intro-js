@@ -264,10 +264,11 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(arr, num) {
-  arr.splice(num, num);
+  arr.splice(num, 1);
   return arr.length;
 }
-// console.log(removeArtist(artists, 1));
+// console.log(artists.length)
+// console.log(removeArtist(artists, 0));
 
 
 
@@ -317,7 +318,7 @@ function lotsOfArt(arr) {
   }
   return busyArtist;
 }
-console.log(lotsOfArt(artists));
+// console.log(lotsOfArt(artists));
 
 
 /* ***** END OF TASKS ***** */
